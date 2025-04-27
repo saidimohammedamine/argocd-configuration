@@ -15,5 +15,7 @@ Now lets open another duplicate tab. Create a new namespace called argocd in you
 
      kubectl -n argocd get all
 
--Now to login into argocd web : username ---> admin 
-                                password ---> kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d
+-Now to login into argocd web : 
+
+username ---> admin 
+password ---> kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d
